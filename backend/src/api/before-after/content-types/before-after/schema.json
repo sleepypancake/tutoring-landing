@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "before_afters",
+  "info": {
+    "singularName": "before-after",
+    "pluralName": "before-afters",
+    "displayName": "Фото До / После",
+    "description": "Пары фотографий тетрадей до и после занятий"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pairs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.before-after-pair"
+    }
+  }
+}

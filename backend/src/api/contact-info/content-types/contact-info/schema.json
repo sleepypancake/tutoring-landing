@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_infos",
+  "info": {
+    "singularName": "contact-info",
+    "pluralName": "contact-infos",
+    "displayName": "Контакты",
+    "description": "Кнопки связи на сайте"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "contacts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.link"
+    },
+    "mapUrl": {
+      "type": "string"
+    }
+  }
+}

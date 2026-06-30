@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programs",
+  "info": {
+    "singularName": "program",
+    "pluralName": "programs",
+    "displayName": "Программа занятий",
+    "description": "Программы занятий для сайта"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "default": "✏️"
+    },
+    "color": {
+      "type": "string",
+      "default": "#7B5EA7"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#E8E0F5"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

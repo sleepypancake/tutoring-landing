@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npx create-next-app@latest frontend --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(npx create-strapi-app@latest backend --quickstart --no-run)",
+      "Bash(npx create-strapi-app@5 backend --quickstart --no-run --skip-cloud)",
+      "Bash(npm install *)",
+      "mcp__visualize__read_me",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(npm run *)",
+      "Bash(curl -s \"http://localhost:3000/_next/image?url=http%3A%2F%2Flocalhost%3A1337%2Fuploads%2Fdo1_25088fa429.jpeg&w=828&q=75\" -o /dev/null -w \"%{http_code}\")"
+    ]
+  }
+}

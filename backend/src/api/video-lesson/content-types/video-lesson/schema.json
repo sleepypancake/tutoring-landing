@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_lessons",
+  "info": {
+    "singularName": "video-lesson",
+    "pluralName": "video-lessons",
+    "displayName": "Видео с занятий",
+    "description": "Видео уроков — загрузите файл или укажите ссылку на YouTube"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["videos"]
+    },
+    "youtubeUrl": {
+      "type": "string",
+      "required": false
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

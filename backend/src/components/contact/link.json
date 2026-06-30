@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_contact_links",
+  "info": {
+    "displayName": "Ссылка",
+    "icon": "link"
+  },
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": ["telegram", "whatsapp", "max", "phone", "email"],
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

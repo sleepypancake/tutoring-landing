@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Nunito', sans-serif;
+}
+
+:root {
+  --background: #FFFDF6;
+  --foreground: #1C1040;
+
+  --cream: #FFFDF6;
+  --cream-dark: #F5F0E0;
+  --purple: #6B4FA0;
+  --purple-light: #EDE8F8;
+  --purple-dark: #4A357A;
+  --coral: #FF6B4A;
+  --coral-light: #FFF0EC;
+  --yellow: #FFCC00;
+  --yellow-light: #FFFBE6;
+  --mint: #3DBFA0;
+  --mint-light: #E6F8F4;
+  --navy: #1C1040;
+  --muted: #7A7191;
+
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-xl: 48px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--navy);
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 16px; }
+}
+
+.wave-top {
+  margin-top: -2px;
+  display: block;
+  width: 100%;
+}
+.wave-bottom {
+  margin-bottom: -2px;
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--purple);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 100px;
+  font-weight: 800;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.15s;
+  letter-spacing: -0.2px;
+}
+.btn-primary:hover { background: var(--purple-dark); transform: translateY(-2px); }
+
+.btn-outline-green {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #1a7a52;
+  padding: 15px 32px;
+  border-radius: 100px;
+  font-weight: 800;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  border: 2.5px solid #25D366;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.15s;
+}
+.btn-outline-green:hover { background: #25D366; color: white; transform: translateY(-2px); }
+
+.btn-outline-tg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #1155A0;
+  padding: 15px 32px;
+  border-radius: 100px;
+  font-weight: 800;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  border: 2.5px solid #229ED9;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.15s;
+}
+.btn-outline-tg:hover { background: #229ED9; color: white; transform: translateY(-2px); }
+
+.section-label {
+  display: inline-block;
+  background: var(--purple-light);
+  color: var(--purple);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}

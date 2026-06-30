@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build
+.next/
+dist/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Strapi SQLite db
+backend/.tmp/
+
+# OS
+.DS_Store
