@@ -17,7 +17,7 @@
       "component": "contact.link"
     },
     "mapUrl": {
-      "type": "string"
+      "type": "text"
     }
   }
 }
