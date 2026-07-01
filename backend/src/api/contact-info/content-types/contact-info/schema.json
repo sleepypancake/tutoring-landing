@@ -8,12 +8,8 @@
     "description": "Кнопки связи на сайте"
   },
   "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {
-    "content-manager": {
-      "visible": true
-    }
+    "draftAndPublish": false,
+    "mainField": "name"
   },
   "attributes": {
     "name": {
