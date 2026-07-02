@@ -479,6 +479,7 @@ export interface ApiContactInfoContactInfo extends Struct.SingleTypeSchema {
   };
   options: {
     draftAndPublish: false;
+    mainField: 'name';
   };
   attributes: {
     contacts: Schema.Attribute.Component<'contact.link', true>;
@@ -491,7 +492,9 @@ export interface ApiContactInfoContactInfo extends Struct.SingleTypeSchema {
       'api::contact-info.contact-info'
     > &
       Schema.Attribute.Private;
-    mapUrl: Schema.Attribute.String;
+    mapUrl: Schema.Attribute.Text;
+    name: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B'>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
